@@ -24,10 +24,13 @@
 		<p><input type="button" onclick='window.location.reload(true)' value="Rafraichir"/></p>
 	</form>
 
+
+
 <?php
+
 // Connexion à la base de données
 try {
-	$bdd = new PDO('mysql:host=localhost;dbname=minichat;charset=utf8', 'root', '');
+	$bdd = new PDO('mysql:host=localhost;dbname=minichat;charset=utf8', 'root', 'root');
 	}
 
 catch(Exception $e) {
